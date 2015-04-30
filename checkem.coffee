@@ -7,7 +7,6 @@ class Checkem
     @$el.data('checkem-mode') == "hide"
 
   refresh: ->
-    console.log "refresh"
     toggle = @show()
     toggle = !toggle if @$el[0].checked
     @target().toggle(toggle)
